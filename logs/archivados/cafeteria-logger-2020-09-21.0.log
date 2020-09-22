@@ -1,0 +1,275 @@
+2020-09-21 00:18:08,028 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.5.Final
+2020-09-21 00:18:08,048 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ChallengeApplication on yasser-Nitro-AN515-42 with PID 637 (/home/yasser/Documentos/wallmart-search-backend/backendchallenge/target/classes started by root in /home/yasser/Documentos/wallmart-search-backend/backendchallenge)
+2020-09-21 00:18:08,050 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-09-21 00:18:08,140 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-2.6.1.jar referenced one or more files that do not exist: file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-09-21 00:18:08,141 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 00:18:08,142 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-21 00:18:08,801 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-21 00:18:08,853 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 48ms. Found 1 MongoDB repository interfaces.
+2020-09-21 00:18:09,266 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-09-21 00:18:09,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-21 00:18:09,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-09-21 00:18:09,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 00:18:09,316 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-09-21 00:18:09,316 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1174 ms
+2020-09-21 00:18:09,418 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-21 00:18:09,443 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681b714e3a9e3996de00c8', description='null'}-127.0.0.1:27017] Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Conexión rehusada (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-21 00:18:09,630 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-09-21 00:18:09,798 INFO org.dozer.config.GlobalSettings [restartedMain] Trying to find Dozer configuration file: dozer.properties
+2020-09-21 00:18:09,802 WARN org.dozer.config.GlobalSettings [restartedMain] Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-21 00:18:09,803 INFO org.dozer.DozerInitializer [restartedMain] Initializing Dozer. Version: 5.5.0, Thread Name: restartedMain
+2020-09-21 00:18:09,805 INFO org.dozer.jmx.JMXPlatformImpl [restartedMain] Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-21 00:18:09,806 INFO org.dozer.jmx.JMXPlatformImpl [restartedMain] Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-21 00:18:09,806 INFO org.dozer.DozerBeanMapper [restartedMain] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:18:09,815 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-09-21 00:18:09,817 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'miEjecutadorHilos'
+2020-09-21 00:18:10,110 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-09-21 00:18:10,127 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 00:18:10,138 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ChallengeApplication in 2.504 seconds (JVM running for 3.034)
+2020-09-21 00:18:49,456 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-21 00:18:49,456 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-09-21 00:18:49,462 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 6 ms
+2020-09-21 00:18:49,545 INFO com.mongodb.diagnostics.logging.SLF4JLogger [Async-3] Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-09-21 00:19:19,559 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.concurrent.ExecutionException: org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Conexión rehusada (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Conexión rehusada (Connection refused)}}]] with root cause
+com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Conexión rehusada (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:177)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:147)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:98)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:278)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:182)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2782)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2542)
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.doFind(ExecutableFindOperationSupport.java:215)
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.all(ExecutableFindOperationSupport.java:158)
+	at org.springframework.data.mongodb.repository.query.MongoQueryExecution$PagedExecution.execute(MongoQueryExecution.java:123)
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.doExecute(AbstractMongoQuery.java:126)
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor$QueryMethodInvoker.invoke(QueryExecutorMethodInterceptor.java:195)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy72.findProductsByDescriptionLikeOrBrandLike(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-09-21 00:19:19,613 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Exception Processing ErrorPage[errorCode=0, location=/error]
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: Tubería rota
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1176)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:335)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Tubería rota
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1252)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:564)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:217)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1179)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 52 common frames omitted
+2020-09-21 00:23:09,978 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681b714e3a9e3996de00c8', description='null'}-127.0.0.1:27017] Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:112)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:444)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:298)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:103)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:60)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+2020-09-21 00:23:19,995 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681b714e3a9e3996de00c8', description='null'}-127.0.0.1:27017] Opened connection [connectionId{localValue:90, serverValue:3}] to 127.0.0.1:27017
+2020-09-21 00:23:19,999 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681b714e3a9e3996de00c8', description='null'}-127.0.0.1:27017] Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2904570}
+2020-09-21 00:23:22,880 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'miEjecutadorHilos'
+2020-09-21 00:23:26,729 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.5.Final
+2020-09-21 00:23:26,759 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ChallengeApplication on yasser-Nitro-AN515-42 with PID 1342 (/home/yasser/Documentos/wallmart-search-backend/backendchallenge/target/classes started by root in /home/yasser/Documentos/wallmart-search-backend/backendchallenge)
+2020-09-21 00:23:26,761 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-09-21 00:23:26,846 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-2.6.1.jar referenced one or more files that do not exist: file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/root/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-09-21 00:23:26,846 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 00:23:26,847 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-21 00:23:27,495 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-21 00:23:27,541 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 43ms. Found 1 MongoDB repository interfaces.
+2020-09-21 00:23:27,941 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-09-21 00:23:27,949 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-21 00:23:27,950 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-09-21 00:23:27,951 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 00:23:28,011 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-09-21 00:23:28,011 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1164 ms
+2020-09-21 00:23:28,119 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-21 00:23:28,169 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681cb0ae50d7778e49429f', description='null'}-127.0.0.1:27017] Opened connection [connectionId{localValue:1, serverValue:4}] to 127.0.0.1:27017
+2020-09-21 00:23:28,176 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681cb0ae50d7778e49429f', description='null'}-127.0.0.1:27017] Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4596920}
+2020-09-21 00:23:28,281 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-09-21 00:23:28,452 INFO org.dozer.config.GlobalSettings [restartedMain] Trying to find Dozer configuration file: dozer.properties
+2020-09-21 00:23:28,456 WARN org.dozer.config.GlobalSettings [restartedMain] Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-21 00:23:28,457 INFO org.dozer.DozerInitializer [restartedMain] Initializing Dozer. Version: 5.5.0, Thread Name: restartedMain
+2020-09-21 00:23:28,458 INFO org.dozer.jmx.JMXPlatformImpl [restartedMain] Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-21 00:23:28,460 INFO org.dozer.jmx.JMXPlatformImpl [restartedMain] Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-21 00:23:28,460 INFO org.dozer.DozerBeanMapper [restartedMain] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:28,470 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-09-21 00:23:28,472 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'miEjecutadorHilos'
+2020-09-21 00:23:28,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-09-21 00:23:28,772 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 00:23:28,781 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ChallengeApplication in 2.433 seconds (JVM running for 3.024)
+2020-09-21 00:23:34,691 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'miEjecutadorHilos'
+2020-09-21 00:23:48,830 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.5.Final
+2020-09-21 00:23:48,847 INFO org.springframework.boot.StartupInfoLogger [main] Starting ChallengeApplicationTests on yasser-Nitro-AN515-42 with PID 1486 (started by root in /home/yasser/Documentos/wallmart-search-backend/backendchallenge)
+2020-09-21 00:23:48,849 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-09-21 00:23:49,597 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-21 00:23:49,657 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55ms. Found 1 MongoDB repository interfaces.
+2020-09-21 00:23:50,123 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-21 00:23:50,196 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681cc66c97d2313941dcc6', description='null'}-127.0.0.1:27017] Opened connection [connectionId{localValue:1, serverValue:5}] to 127.0.0.1:27017
+2020-09-21 00:23:50,202 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f681cc66c97d2313941dcc6', description='null'}-127.0.0.1:27017] Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4378040}
+2020-09-21 00:23:50,504 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:50,524 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2020-09-21 00:23:50,537 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'miEjecutadorHilos'
+2020-09-21 00:23:51,373 INFO org.springframework.boot.StartupInfoLogger [main] Started ChallengeApplicationTests in 2.887 seconds (JVM running for 4.19)
+2020-09-21 00:23:51,856 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Listado de productos :: inicio de test
+2020-09-21 00:23:51,921 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Listado de productos :: fin de test
+2020-09-21 00:23:51,927 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Description Or Brand haciendo busqueda asincrona :: inicio de test
+2020-09-21 00:23:51,928 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Description Or Brand haciendo busqueda asincrona :: fin de test
+2020-09-21 00:23:51,929 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Id haciendo busqueda asincrona :: inicio de test
+2020-09-21 00:23:51,930 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Id haciendo busqueda asincrona :: fin de test
+2020-09-21 00:23:51,935 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wallmart.challenge.Services.ProductServiceImplTest], using SpringBootContextLoader
+2020-09-21 00:23:51,936 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.wallmart.challenge.Services.ProductServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-09-21 00:23:51,937 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.wallmart.challenge.Services.ProductServiceImplTest]: ProductServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-09-21 00:23:51,945 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.wallmart.challenge.ChallengeApplication for test class com.wallmart.challenge.Services.ProductServiceImplTest
+2020-09-21 00:23:51,947 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-09-21 00:23:51,948 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c1503a3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@586495f1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47df5041, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2a0ea492, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e52a26b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2e56b4d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f857e08, org.springframework.test.context.event.EventPublishingTestExecutionListener@6070775e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b5ac0c1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@224c7de4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36ad229b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@55846997, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@805e72e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@49671897]
+2020-09-21 00:23:52,025 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,038 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,051 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,057 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,065 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,074 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 00:23:52,096 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'miEjecutadorHilos'
+2020-09-21 01:04:30,040 INFO org.springframework.boot.StartupInfoLogger [main] Starting ChallengeApplicationTests on yasser-Nitro-AN515-42 with PID 3136 (started by root in /home/yasser/Documentos/wallmart-search-backend/backendchallenge)
+2020-09-21 01:04:30,042 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-09-21 01:04:30,045 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.5.Final
+2020-09-21 01:04:30,698 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-21 01:04:30,758 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55ms. Found 1 MongoDB repository interfaces.
+2020-09-21 01:04:31,260 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-21 01:04:31,327 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f68264fff51ac5b2e053357', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2020-09-21 01:04:31,333 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5f68264fff51ac5b2e053357', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4082511}
+2020-09-21 01:04:31,653 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:31,673 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2020-09-21 01:04:31,689 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'miEjecutadorHilos'
+2020-09-21 01:04:32,591 INFO org.springframework.boot.StartupInfoLogger [main] Started ChallengeApplicationTests in 2.851 seconds (JVM running for 3.995)
+2020-09-21 01:04:33,067 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Listado de productos :: inicio de test
+2020-09-21 01:04:33,139 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Listado de productos :: fin de test
+2020-09-21 01:04:33,146 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Description Or Brand haciendo busqueda asincrona :: inicio de test
+2020-09-21 01:04:33,148 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Description Or Brand haciendo busqueda asincrona :: fin de test
+2020-09-21 01:04:33,149 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Id haciendo busqueda asincrona :: inicio de test
+2020-09-21 01:04:33,151 INFO com.wallmart.challenge.Controllers.ProductsControllerTest [main] Obtener Productos  by Id haciendo busqueda asincrona :: fin de test
+2020-09-21 01:04:33,156 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wallmart.challenge.Services.ProductServiceImplTest], using SpringBootContextLoader
+2020-09-21 01:04:33,157 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.wallmart.challenge.Services.ProductServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-09-21 01:04:33,158 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.wallmart.challenge.Services.ProductServiceImplTest]: ProductServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-09-21 01:04:33,167 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.wallmart.challenge.ChallengeApplication for test class com.wallmart.challenge.Services.ProductServiceImplTest
+2020-09-21 01:04:33,170 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-09-21 01:04:33,171 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6070775e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b5ac0c1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@224c7de4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36ad229b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55846997, org.springframework.test.context.transaction.TransactionalTestExecutionListener@805e72e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49671897, org.springframework.test.context.event.EventPublishingTestExecutionListener@168142da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60bf494c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@47a4eee2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36f6e521, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2afdf6b7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@30922f8d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@50211483]
+2020-09-21 01:04:33,254 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,267 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,279 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,286 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,295 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,304 INFO org.dozer.DozerBeanMapper [main] Initializing a new instance of dozer bean mapper.
+2020-09-21 01:04:33,319 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'miEjecutadorHilos'
