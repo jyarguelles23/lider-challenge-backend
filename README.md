@@ -6,10 +6,10 @@ This project need this repository https://github.com/walmartdigital/products-db 
 First you must run the the database container referenced here https://github.com/walmartdigital/products-db <br />
 
 ## In the project directory, you can run:
-The command   mvn clean install <br />
+The command   <strong> mvn clean install </strong> <br />
 Then for build the docker image run the command  <strong> docker build -t lider-challenge-springboot .</strong> <br />
-Running the docker image with the data base run the command docker run -it 8080:8080 --network=host lider-challenge-springboot <br />
-Test url localhost:8080/product/api <br />
+Running the docker image with the data base <strong> run -it 8080:8080 --network=host lider-challenge-springboot </strong> <br />
+Test url <strong> localhost:8080/product/api </strong> <br />
 
  
  
